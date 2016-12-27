@@ -10,9 +10,9 @@ type Apk struct {
 	Id          int       `orm:"auto"`
 	VersionName string    `orm:"size(64)"`           //版本号
 	VersionCode string    `orm:"size(64)"`           //编译版本号
-	Updatelog   string    `orm:"size(512)"`          //更新日志
+	Updatelog   string    `orm:"size(1024)"`         //更新日志
 	Filename    string    `orm:"size(64)"`           //文件名
-	DownloadUrl string    `orm:"size(64)"`           //下载地址
+	DownloadUrl string    `orm:"size(128)"`          //下载地址
 	Size        string    `orm:"size(64)"`           //文件大小
 	CreatedAt   time.Time `orm:"index;auto_now_add"` //创建时间
 }

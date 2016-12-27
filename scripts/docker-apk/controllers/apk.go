@@ -94,11 +94,3 @@ func (c *MainController) Delete() {
 
 	c.Redirect("/", 302)
 }
-
-//func (c *MainController) Download() {
-//	name := c.GetString("name")
-
-//	c.Ctx.Output.Download("files/" + name)
-
-//	//	c.Redirect("/", 302)
-//}
